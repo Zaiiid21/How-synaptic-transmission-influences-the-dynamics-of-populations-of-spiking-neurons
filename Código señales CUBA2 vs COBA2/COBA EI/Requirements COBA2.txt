@@ -1,0 +1,26 @@
+N = 10000   # We define the global parameters
+vres = 100
+vref = 0
+ti = 0
+Tmax= 50
+dt=0.001
+ventana = 0.022  #0.04
+tau = int(ventana/dt)
+refractory_period = ((2/vres)/dt) #200  # You can adjust this value as needed.
+sn = 1/dt
+
+t0 = 10
+t2 = 30
+Iexc = 5
+Iinh = 5
+
+g = 1
+Ee = 30
+Ei = -30
+delta = 1
+x0e = 5
+x0i = -5
+SDe = 0 #Where I want the Fre to start
+n0e = -5 #Where I want the Ve to start
+SDi = 0 #Where I want the Fri to start
+n0i = -5 #Where I want the Vi to start
